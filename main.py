@@ -3,14 +3,15 @@ from signupLogin import register_user, login_user, update_user_data
 import requests
 import base64
 
+st.set_page_config(page_title="ATS System", layout="wide")
+
 hide_github_icon = """
 #GithubIcon {
   visibility: hidden;
 }
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
- 
-st.set_page_config(page_title="ATS System", layout="wide")
+
 
 options = ["Resume Screening", "Job Description", "Signup/Login"]
 
