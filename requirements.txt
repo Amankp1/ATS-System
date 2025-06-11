@@ -7,3 +7,4 @@ pillow
 pymupdf
 requests
 python-multipart
+pymongo
