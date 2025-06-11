@@ -6,7 +6,17 @@ from resumeScreening import process_resume_screening
 from PIL import Image
 from jobDescription import process_job_description
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or specify your Streamlit domain
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class ResumeScreeningRequest(BaseModel):
     name: str
