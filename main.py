@@ -24,7 +24,7 @@ with col2:
 
 st.markdown("<hr style='margin-top: 0;' />", unsafe_allow_html=True)
 
-API_URL = "http://127.0.0.1:8000"  # Change if backend runs elsewhere
+API_URL = "https://ats-system-hss9.onrender.com"  # Change if backend runs elsewhere
 
 # Main content based on selected option
 if st.session_state.selected_option == "Resume Screening":
