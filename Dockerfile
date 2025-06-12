@@ -15,4 +15,5 @@ COPY . .
 EXPOSE 8000
 
 # Run the FastAPI app with uvicorn
-CMD ["python", "-m", "uvicorn", "fastapi_backend:app", "--host", "0.0.0.0", "--port", "8000"] 
+# CMD ["python", "-m", "uvicorn", "fastapi_backend:app", "--host", "0.0.0.0", "--port", "8000"] 
+CMD ["streamlit", "run", "App.py"]
